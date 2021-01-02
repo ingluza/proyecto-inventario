@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
-import { ClientesComponent } from './clientes.component';
+import { CrearClientesComponent } from './crearclientes.component';
 
 import { ClientesRoutingModule } from './clientes-routing.module';
 
 @NgModule({
-  declarations: [ClientesComponent],
+  declarations: [CrearClientesComponent],
   imports: [ClientesRoutingModule]
 })
 export class ClientesModule { }

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { ClientesComponent } from './clientes.component';
+import { CrearClientesComponent } from './crearclientes.component';
 
 const routes: Routes = [
   {
@@ -16,7 +16,7 @@ const routes: Routes = [
       },
       {
         path: 'nuevo',
-        component: ClientesComponent,
+        component: CrearClientesComponent,
         data: {
           title: 'Cards'
         }
