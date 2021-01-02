@@ -41,7 +41,7 @@ export const navItems: INavData[] = [
     children: [
       {
         name: 'Registrar nuevo',
-        url: '/productos/nuevo',
+        url: '/clientes/nuevo',
         icon: 'icon-puzzle'
       }
     ]

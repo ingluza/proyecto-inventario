@@ -51,16 +51,24 @@ export const routes: Routes = [
     },
     children: [
       {
-        path: 'base',
-        loadChildren: () => import('./views/base/base.module').then(m => m.BaseModule)
-      },
-      {
         path: 'dashboard',
         loadChildren: () => import('./views/dashboard/dashboard.module').then(m => m.DashboardModule)
       },
       {
-        path: 'notifications',
-        loadChildren: () => import('./views/notifications/notifications.module').then(m => m.NotificationsModule)
+        path: 'proveedores',
+        loadChildren: () => import('./views/proveedores/proveedores.module').then(m => m.ProveedoresModule)
+      },
+      {
+        path: 'productos',
+        loadChildren: () => import('./views/productos/productos.module').then(m => m.ProductosModule)
+      },
+      {
+        path: 'clientes',
+        loadChildren: () => import('./views/clientes/clientes.module').then(m => m.ClientesModule)
+      },
+      {
+        path: 'facturas',
+        loadChildren: () => import('./views/facturas/facturas.module').then(m => m.FacturasModule)
       }
     ]
   },
