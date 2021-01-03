@@ -1,12 +1,11 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 
-
+import { CrearProveedoresComponent } from './crearproveedores.component';
+import { ProveedoresRoutingModule } from './proveedores-routing.module';
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule
+  declarations: [CrearProveedoresComponent],
+  imports: [ ProveedoresRoutingModule
   ]
 })
 export class ProveedoresModule { }

@@ -17,7 +17,7 @@ export const navItems: INavData[] = [
     children: [
       {
         name: 'Registrar nuevo',
-        url: '/provedores/nuevo',
+        url: '/proveedores/nuevo',
         icon: 'icon-pencil'
       }
     ]
@@ -57,7 +57,7 @@ export const navItems: INavData[] = [
         icon: 'icon-puzzle'
       }
     ]
-  },
+  }/*,
   {
     divider: true
   },
@@ -101,7 +101,7 @@ export const navItems: INavData[] = [
       text: 'NEW'
     },
     attributes: { disabled: true },
-  }/* ,
+  } ,
   {
     name: 'Download CoreUI',
     url: 'http://coreui.io/angular/',
