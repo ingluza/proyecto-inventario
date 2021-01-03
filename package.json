@@ -1,7 +1,6 @@
 {
-  "name": "@coreui/coreui-free-angular-admin-template",
-  "version": "2.9.5",
-  "description": "CoreUI Free Angular 2+ Admin Template",
+  "name": "app-angular",
+  "description": "Sistema de administracion web",
   "author": {
     "name": "Łukasz Holeczek",
     "url": "http://holeczek.pl",
