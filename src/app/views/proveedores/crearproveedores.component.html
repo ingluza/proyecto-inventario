@@ -26,7 +26,7 @@
                 </select>
             </div>
             <div class="form-group col-sm-4">
-                <label for="nombre">Nombre</label>
+                <label for="nombre">Nombre/Razón Social</label>
                 <input type="text" class="form-control" id="nombre">
             </div>
             <div class="form-group col-sm-4">
@@ -35,23 +35,28 @@
             </div>
         </div><!--/.row-->
         <br />
-        <div class="row">
-            <div class="form-group col-sm-4">
-                <label for="nombreContacto">Nombre del contacto</label>
-                <input type="text" class="form-control" id="nombreContacto">
+        <form [formGroup]="formularioContacto">
+            <div class="row" formArrayName="contacto">
+                <div ngFor="let otroContacto of contacto.controls; let i = index;">
+                    <div class="form-group col-sm-4">
+                        <label for="nombreContacto">Nombre del contacto</label>
+                        <input type="text" class="form-control" id="nombreContacto">
+                    </div>
+                    <div class="form-group col-sm-4">
+                        <label for="correoContacto">Correo electrónico</label>
+                        <input type="text" class="form-control" id="correoContacto">
+                    </div>
+                    <div class="form-group col-sm-4">
+                        <label for="telefonoContacto">Teléfono</label>
+                        <input type="text" class="form-control" id="telefonoContacto">
+                    </div>
+                </div>
+            </div><!--/.row-->
+            <div class="form-group">
+                <button class="btn btn-sm btn-pill btn-primary" (click)="anadirContacto()">+ Añadir otro contacto</button>
             </div>
-            <div class="form-group col-sm-4">
-                <label for="correoContacto">Correo electrónico</label>
-                <input type="text" class="form-control" id="correoContacto">
-            </div>
-            <div class="form-group col-sm-4">
-                <label for="telefonoContacto">Teléfono</label>
-                <input type="text" class="form-control" id="telefonoContacto">
-            </div>
-        </div><!--/.row-->        
-        <div class="form-group">
-            <button type="submit" class="btn btn-sm btn-pill btn-primary">+ Añadir otro contacto</button>
-        </div>
+        </form>    
+       
         <br />
         <hr />
         <div class="form-actions">
