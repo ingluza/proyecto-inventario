@@ -1,71 +1,71 @@
 <div class="col-sm-9">
-<div class="card">
-    <div class="card-header">
-        <small><strong>Datos del proveedor</strong></small>
-    </div>
-    <div class="card-body">
-        <div class="row">
-            <div class="form-group col-sm-4">
-                <label for="tipoDocumento">Tipo documento</label>
-                <select class="form-control" id="tipoDocumento">
-                </select>
-            </div>
-            <div class="form-group col-sm-4">
-                <label for="nit">NIT</label>
-                <input type="text" class="form-control" id="nit">
-            </div>
-            <div class="form-group col-sm-4">
-                <label for="codigoVerific">Código verificación</label>
-                <input type="text" class="form-control" id="codigoVerific">
-            </div>
-        </div><!--/.row-->
-        <div class="row">
-            <div class="form-group col-sm-4">
-                <label for="perfilTribut">Perfil tributario</label>
-                <select class="form-control" id="perfilTribut">
-                </select>
-            </div>
-            <div class="form-group col-sm-4">
-                <label for="nombre">Nombre/Razón Social</label>
-                <input type="text" class="form-control" id="nombre">
-            </div>
-            <div class="form-group col-sm-4">
-                <label for="direccion">Dirección</label>
-                <input type="text" class="form-control" id="direccion">
-            </div>
-        </div><!--/.row-->
-        <br />
-        <form [formGroup]="formularioContacto">
-            <div formArrayName="contacto">
-                <div ngFor="let otroContacto of contacto.controls; let i = index;">
-                    <div class="row">
-                        <div class="form-group col-sm-4">
-                            <label for="nombreContacto">Nombre del contacto</label>
-                            <input type="text" class="form-control" id="nombreContacto">
-                        </div>
-                        <div class="form-group col-sm-4">
-                            <label for="correoContacto">Correo electrónico</label>
-                            <input type="text" class="form-control" id="correoContacto">
-                        </div>
-                        <div class="form-group col-sm-4">
-                            <label for="telefonoContacto">Teléfono</label>
-                            <input type="text" class="form-control" id="telefonoContacto">
-                        </div>
-                    </div>
+    <div class="card">
+        <div class="card-header">
+            <small><strong>Datos del proveedor</strong></small>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="form-group col-sm-4">
+                    <label for="tipoDocumento">Tipo documento</label>
+                    <select class="form-control" id="tipoDocumento">
+                    </select>
+                </div>
+                <div class="form-group col-sm-4">
+                    <label for="nit">NIT</label>
+                    <input type="text" class="form-control" id="nit">
+                </div>
+                <div class="form-group col-sm-4">
+                    <label for="codigoVerific">Código verificación</label>
+                    <input type="text" class="form-control" id="codigoVerific">
                 </div>
             </div><!--/.row-->
-            <div class="form-group">
-                <button class="btn btn-sm btn-pill btn-primary" (click)="anadirContacto()">+ Añadir otro contacto</button>
+            <div class="row">
+                <div class="form-group col-sm-4">
+                    <label for="perfilTribut">Perfil tributario</label>
+                    <select class="form-control" id="perfilTribut">
+                    </select>
+                </div>
+                <div class="form-group col-sm-4">
+                    <label for="nombre">Nombre/Razón Social</label>
+                    <input type="text" class="form-control" id="nombre">
+                </div>
+                <div class="form-group col-sm-4">
+                    <label for="direccion">Dirección</label>
+                    <input type="text" class="form-control" id="direccion">
+                </div>
+            </div><!--/.row-->
+            <br />
+            <form [formGroup]="formularioContacto">
+                <div formArrayName="contacto">
+                    <div ngFor="let otroContacto of contacto.controls; let i = index;">
+                        <div class="row">
+                            <div class="form-group col-sm-4">
+                                <label for="nombreContacto">Nombre del contacto</label>
+                                <input type="text" class="form-control" id="nombreContacto">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label for="correoContacto">Correo electrónico</label>
+                                <input type="text" class="form-control" id="correoContacto">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label for="telefonoContacto">Teléfono</label>
+                                <input type="text" class="form-control" id="telefonoContacto">
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/.row-->
+                <div class="form-group">
+                    <button class="btn btn-sm btn-pill btn-primary" (click)="anadirContacto()">+ Añadir otro contacto</button>
+                </div>
+            </form>    
+           
+            <br />
+            <hr />
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Guardar</button>
+                <button type="button" class="btn btn-secondary">Cancelar</button>
             </div>
-        </form>    
-       
-        <br />
-        <hr />
-        <div class="form-actions">
-            <button type="submit" class="btn btn-primary">Guardar</button>
-            <button type="button" class="btn btn-secondary">Cancelar</button>
         </div>
+        
     </div>
-    
-</div>
-</div>
+    </div>
