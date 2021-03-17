@@ -37,7 +37,7 @@
         <br />
         <form [formGroup]="formularioContacto">
             <div formArrayName="contacto">
-                <div ngFor="let otroContacto of contacto.controls; let i = index;">
+                <div *ngFor="let otroContacto of contacto.controls;">
                     <div class="row">
                         <div class="form-group col-sm-4">
                             <label for="nombreContacto">Nombre del contacto</label>
