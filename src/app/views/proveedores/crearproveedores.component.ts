@@ -7,13 +7,12 @@ import { FormBuilder, FormGroup, FormControl, FormArray } from '@angular/forms';
 })
 export class CrearProveedoresComponent implements OnInit {
 
+  formularioContacto: FormGroup;
   get contacto(): FormArray {
     return this.formularioContacto.get('contacto') as FormArray;
   }
 
   constructor(private fb: FormBuilder) { }
-
-  formularioContacto: FormGroup;
 
   ngOnInit() {
     this.crearFormulario();
